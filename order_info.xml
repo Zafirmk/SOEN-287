@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <order_list>
+        <order>
+            <user>James Kirk</user>
+            <order_num>14682</order_num>
+            <orderList>
+                Chicken Breast, Broccoli, Carrots, Quebon 2% Milk, Burnbrae White Eggs
+            </orderList>
+        </order>
+
+        <order>
+            <user>Jean-Luc Picard</user>
+            <order_num>12588</order_num>
+            <orderList>
+                Ground Meat, Lettuce, Chiquita Bananas, Water, Granola Bars
+            </orderList>
+        </order>
+
+        <order>
+            <user>Benjamin Sisko</user>
+            <order_num>10031</order_num>
+            <orderList>
+                Chicken Legs, Broccoli, Carrots, Energy Drink, Lays Chips
+            </orderList>
+        </order>
+
+        <order>
+            <user>Kathryn Janeway</user>
+            <order_num>01027</order_num>
+            <orderList>
+                    Beyond Meat, Assorted Bell Peppers, Papaya Fruit, Zespri Kiwifruit, Royal Gala Apples
+            </orderList>
+        </order>
+
+        <order>
+            <user>Jonathan Archer</user>
+            <order_num>11001</order_num>
+            <orderList>
+                Chicken Breast, Broccoli, French Baguette, Sprite, Oreo
+            </orderList>
+        </order>
+
+    </order_list>
+</root>

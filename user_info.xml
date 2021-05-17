@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <amount>4</amount>
+  <userList>
+    <user>
+      <code>0</code>
+      <firstName>Admin</firstName>
+      <lastName>Account</lastName>
+      <email>admin@gmail.com</email>
+      <password>admin</password>
+      <address>123 Admin Street</address>
+      <city>Montreal</city>
+      <stateOrProvince>Quebec</stateOrProvince>
+      <postalCode>H1A 9A1</postalCode>
+    </user>
+    <user>
+      <code>1</code>
+      <firstName>John</firstName>
+      <lastName>Smith</lastName>
+      <email>jsmith@gmail.com</email>
+      <password>john</password>
+      <address>123 John Street</address>
+      <city>Ottawa</city>
+      <stateOrProvince>Ontario</stateOrProvince>
+      <postalCode>H2A 9A2</postalCode>
+    </user>
+    <user>
+      <code>2</code>
+      <firstName>Jane</firstName>
+      <lastName>Doe</lastName>
+      <email>jdoe@gmail.com</email>
+      <password>jane</password>
+      <address>123 Jane Street</address>
+      <city>Laval</city>
+      <stateOrProvince>Quebec</stateOrProvince>
+      <postalCode>H1B 9B1</postalCode>
+    </user>
+    <user>
+      <code>3</code>
+      <firstName>Robert</firstName>
+      <lastName>Robertson</lastName>
+      <email>robert@gmail.com</email>
+      <password>robert</password>
+      <address>123 Robert Street</address>
+      <city>Quebec City</city>
+      <stateOrProvince>Quebec</stateOrProvince>
+      <postalCode>H3R 8D7</postalCode>
+    </user>
+
+  </userList>
+</root>

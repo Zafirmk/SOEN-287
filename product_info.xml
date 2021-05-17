@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <total_products>26</total_products>
+    <snacks_aisle>
+        <product>
+            <code>1</code>
+            <name>Oreo Original Cookies</name>
+            <brand>CHRISTIE</brand>
+            <description>OREO Chocolate Sandwich Cookies have been America's favorite cookie for over 100 years. Stuffed with delicious OREO creme, these chocolate sandwich cookies are supremely dunkable. OREO cookies are great for sharing with friends, serving at parties, or enjoying with cold milk.</description>
+            <price>3.99</price>
+            <weight>500 g</weight>
+            <quantity>10</quantity>
+        </product>
+        <product>
+            <code>2</code>
+            <aisle>snacks</aisle>
+            <name>Crunchy Pecan Cereal Bars</name>
+            <brand>NATURE VALLEY</brand>
+            <description>A tasty snack for a busy day or an active lifestyle! Smart snacking has never tasted so good.</description>
+            <price>2.99</price>
+            <weight>210 g</weight>
+            <quantity>10</quantity>
+        </product>
+        <product>
+            <code>3</code>
+            <name>Classic Potato Chips</name>
+            <brand>LAY'S</brand>
+            <description>It all starts with farm-grown potatoes, cooked and seasoned to perfection. So every LAY'S potato chip is perfectly crispy and full of fresh potato taste. Happiness in Every Bite.</description>
+            <price>1.89</price>
+            <weight>66 g</weight>
+            <quantity>10</quantity>
+        </product>
+        <product>
+            <code>4</code>
+            <name>Classic Thins Pretzels</name>
+            <brand>ROLD GOLD</brand>
+            <description>Between the one-of-a-kind flavor and crispy texture of ROLD GOLD pretzels, you just might fall in love with this golden-baked snack all over again every time you take a break. Try them with peanut butter, hummus or on their own to take your break to a whole new level!</description>
+            <price>3.99</price>
+            <weight>400 g</weight>
+            <quantity>10</quantity>
+        </product>
+        <product>
+            <code>5</code>
+            <name>Extra Buttery 10 Pack Popcorn</name>
+            <brand>ORVILLE REDENBACHER'S</brand>
+            <description>Treat yourself to the original. Made with the perfect balance of butter flavor and salt, our classic microwave butter popcorn is packed up in mini microwave bags for easy snacking.</description>
+            <price>8.49</price>
+            <weight>820 g</weight>
+            <quantity>10</quantity>
+        </product>
+        <product>
+            <code>6</code>
+            <name>Roasted Unsalted Pistachios</name>
+            <brand>WONDERFUL</brand>
+            <description>Fans of Wonderful Pistachios can now enjoy a sodium-free version of our pistachios, roasted to perfection with no additives.</description>
+            <price>4.99</price>
+            <weight>225 g</weight>
+            <quantity>10</quantity>
+        </product>
+    </snacks_aisle>
+    <meat_poultry_fish_aisle>  
+        <product>
+            <code>21</code>
+            <name>Chicken Breast</name>
+            <brand>100% Canadian Chicken</brand>
+            <description>The Chicken's were raised on a free range farm in the upper regions of Quebec. They are antiobiotics and GMO free. SUPPORT YOUR LOCAL FARMERS.</description>
+            <price>8.99</price>
+            <weight>1000 g</weight>
+            <quantity>10</quantity>
+            <description2>Our main priority here at McJawz is getting local products into the hands of our consumers.
+                   This brand of chicken breast comes from one of the finest farms in quebec with none of the price premium you expect to pay for a quality product.
+                   The chicken breast are lean and trimmed of most fat before packaging.</description2>
+        </product>
+        <product>
+            <code>22</code>
+            <name>Chicken Thigh</name>
+            <brand>100% Canadian Chicken</brand>
+            <description>The Chicken's were raised on a free range farm in the upper regions of Quebec. They are antiobiotics and GMO free. Contains both leg and Thighs.WARNING: May contain bones. SUPPORT YOUR LOCAL FARMERS.</description>
+            <price>7.99</price>
+            <weight>1000 g</weight>
+            <quantity>10</quantity>
+            <description2>Large chicken thighs from the top of the Chicken genetic pool.
+                    We carefully breed the chickens in order to yield the most meat and biggest size. Once again achieving this without explicitly modifying genetics.</description2>
+        </product>
+         <product>
+            <code>23</code>
+            <name>Chicken Legs</name>
+            <brand>100% Canadian Chicken</brand>
+            <description>The Chicken's were raised on a free range farm in the upper regions of Quebec. They are antiobiotics and GMO free. Contains both leg and Thighs.WARNING: May contain bones. SUPPORT YOUR LOCAL FARMERS</description>
+            <price>6.99</price>
+            <weight>1000 g</weight>
+             <quantity>10</quantity>
+            <description2>Large chicken legs from the top of the Chicken genetic pool.We carefully breed the chickens in order to yield the most meat and biggest size. Once again achieving this without explicitly modifying genetics.</description2>
+        </product>
+        <product>
+         <code>99</code>
+            <name>TEST</name>
+            <brand>Delete</brand>
+            <description>Delete</description>
+            <price>100</price>
+            <weight>1000 g</weight>
+             <quantity>10</quantity>
+            <description2>TEST</description2>
+        </product>
+        <product>
+            <code>24</code>
+            <name>Ground Meat</name>
+            <brand>100% Canadian Grown Beef</brand>
+            <description>Ground meat was taken from cows grown on Canadian soil. They were grown antibiotic free and GMO free.SUPPORT YOUR LOCAL FARMERS.</description>
+            <price>8.99</price>
+            <weight>1000 g</weight>
+            <quantity>10</quantity>
+            <description2>We unfortunately only offer lean ground meat at this time.We plan to add variations of ground meat with a higher fat content. Within the next couple weeks.</description2>
+        </product>
+         <product>
+            <code>25</code>
+            <name>Beyond Meat</name>
+            <brand>100% Plant Products</brand>
+            <description>"The Beyond Burger is a plant-based burger that looks, cooks, and satisfies like beef. It has all the juicy, meaty deliciousness of a traditional burger, but comes with the upsides of a plant-based meal. The Beyond Burger has 20g of plant-based protein and has no GMOs, soy, or gluten." - BeyondMeat</description>
+            <price>10.99</price>
+            <weight>1000 g</weight>
+            <quantity>10</quantity>
+            <description2>By using a variety of plant proteins, our products deliver greater or equal levels of protein than their animal-based counterparts.
+                        Our fats create juicy plant-based burgers, beef, and sausages that sizzle in the pan or on the grill.
+                       From taste to function, these minerals deliver the nutrients we expect from meat. Potassium Chloride is a naturally occurring mineral, added to provide a mineral balance close to that of animal meat.
+                       The flavors and colors in our food come from plants, and this means we don’t use synthetic additives, for any reason, and we never will.</description2>
+        </product>
+        <product>
+            <code>26</code>
+            <name>Atlantic Salmon</name>
+            <brand>100% Canadian Farmed Salmon</brand>
+            <description>The Salmon was caught off the coast of Newfoundland and kept alive until reaching its final destination to ensure its freshness. SUPPORT YOUR CANADIAN FISH FARMERS.</description>
+            <price>14.99</price>
+            <weight>1000 g</weight>
+            <quantity>10</quantity>
+            <description2>Not your average salmon,guaranteed freshness straight from Canadian Hands.
+                        No artifical colors or flavors are added. Despite not being wild, the salmon's diet consisted of Krill and smaller fish(NO GRAINS).</description2>
+            </product>
+    </meat_poultry_fish_aisle>
+    
+    <bakery_aisle></bakery_aisle>
+    <dairy_eggs_aisle>
+       <product>
+          <code>7</code>
+          <aisle>dairy</aisle>
+          <name>Source Strawberry Yogurt</name>
+          <brand>Source</brand>
+          <description>Source Strawberry Yogurt is made with real fruits to guarantee you an incredible flavour. Free from fat and full of flavour, now you can enjoy wellness your way every day.</description>
+          <price>3.99</price>
+          <weight>650 g</weight>
+          <quantity>10</quantity>
+      </product>
+      <product>
+          <code>8</code>
+          <aisle>dairy</aisle>
+          <name>Silk Vanilla Almond Milk</name>
+          <brand>Silk</brand>
+          <description>You deserve more oh-so-mmm moments—especially if they include a note of vanilla. And our smooth almondmilk also has 50% more calcium than milk.</description>
+          <price>4.99</price>
+          <weight>1.85 L</weight>
+          <quantity>10</quantity>
+      </product>
+      <product>
+          <code>9</code>
+          <aisle>dairy</aisle>
+          <name>Quebon 2% Milk</name>
+          <brand>Quebon</brand>
+          <description>Why change tradition ? Québon partly skimmed 2% milk combine all the great taste and freshness of Quebec's milk with many vitamins and minerals necessary to the maintenance of good health. From our farms to your family.</description>
+          <price>6.99</price>
+          <weight>4 L</weight>
+          <quantity>10</quantity>
+      </product>
+      <product>
+          <code>10</code>
+          <aisle>dairy</aisle>
+          <name>P'Tit Quebec Cheese</name>
+          <brand>P'Tit Quebec</brand>
+          <description>P'Tit Quebec mozarella cheese is the freshest cheese you can get in Quebec. Use it in the kitchen for some delicious pasta or for a simple snack for the kids.</description>
+          <price>4.99</price>
+          <weight>460 g</weight>
+          <quantity>10</quantity>
+      </product>
+      <product>
+          <code>11</code>
+          <aisle>dairy</aisle>
+          <name>Burnbrae Brown Eggs</name>
+          <brand>Burnbrae</brand>
+          <description>Burnbrae Farms Brown Eggs are produced by Rhode Island Red hens. Although the nutritional value is the same as white eggs, some people swear they taste better; who are we to argue?</description>
+          <price>4.50</price>
+          <weight>760 g</weight>
+          <quantity>10</quantity>
+      </product>
+      <product>
+          <code>12</code>
+          <aisle>dairy</aisle>
+          <name>Burnbrae White Eggs</name>
+          <brand>Burnbrae</brand>
+          <description>Naturegg Omega 3 is a nutritionally enhanced egg for people looking for natural foods with more essential nutrients. While all eggs are nutritious, natural and offer a great source of protein, vitamins and minerals, Naturegg Omega 3 eggs also provide an additional source of DHA omega-3 fatty acids.</description>
+          <price>2.99</price>
+          <weight>760 g</weight>
+          <quantity>10</quantity>
+      </product>
+    </dairy_eggs_aisle>
+    <beverages_aisle>
+        <product>
+			<code>13</code>
+			<name>Evian Water</name>
+			<brand>Evian</brand>
+			<description>Evian water is a brand of mineral water coming from sources near Évian-les-Bains, on the south
+				shore of Lake Geneva.</description>
+			<price>1.20</price>
+			<weight>500mL</weight>
+			<quantity>10</quantity>
+			<more_description>Evian Water is a mineral water coming from several sources near Évian-les-Bains, on the south shore of Lake Geneva, which is owned by Danone. It has a PH of 7.2, 
+                            a calcium concentration of 80mg/L, a chloride concentration of 6.8mg/L, a magnesium concentration of 26mg/L, a potassium concentration of 1mg/L 
+                            and a sodium concentration of 6.5mg/L.
+			</more_description>
+		</product>
+		<product>
+			<code>14</code>
+			<name>Sprite</name>
+			<brand>Sprite</brand>
+			<description>A colourless, lemon-lime beverage produced by the Coca-Cola Company.</description>
+			<price>1.80</price>
+			<weight>600mL</weight>
+			<quantity>10</quantity>
+			<more_description>This colorless, lemon-lime flavored soft-drink is created by the same creators of Coca-Cola, the Coca-Cola Company, and was introduced in 1961. It's main ingredients 
+                            consists of carbonated water, high fructose corn syrop, citric acid, natural flavors, sodium citrate and sodium benzoate.
+			</more_description>
+		</product>
+		<product>
+			<code>15</code>
+			<name>Coca Cola</name>
+			<brand>Coca Cola</brand>
+			<description>A carbonated soft drink originally made and intended as a patent medicine.</description>
+			<price>1.80</price>
+			<weight>600mL</weight>
+			<quantity>10</quantity>
+			<more_description>Our 600mL coca cola beverages are imported straight from the The Coca-Cola Company. 
+                            This refreshing beverage was introduced in the year 1886 and is made from coca leaves and kola nuts. It's main ingredients are: carbonated water, sugar, 
+                            caffeine, phosphoric acid, caramel color and natural flavourings.
+			</more_description>
+		</product>
+		<product>
+			<code>16</code>
+			<name>Fanta</name>
+			<brand>Fanta</brand>
+			<description>An orange flavored carbonated soft drink created by Coca-Cola.</description>
+			<price>1.80</price>
+			<weight>600mL</weight>
+			<quantity>10</quantity>
+			<more_description> This delicious, bubbly and refreshing fruit-flavored soft drink is imported from the same creators of Coca-Cola, the Coca-Cola Company, and has over 100 flavors worldwide. 
+                            The Fanta beverage was introduced in 1940 and was created using only ingredients available in Germany at the time of creation, including beet sugar, whey, and 
+                            apple pomace. 
+			</more_description>
+		</product>
+		<product>
+			<code>17</code>
+			<name>Fruit Punch</name>
+			<brand>Minute Maid</brand>
+			<description>A combination made from real fruit creating a refreshing and delicious blend.</description>
+			<price>2.25</price>
+			<weight>1.75L</weight>
+			<quantity>10</quantity>
+			<more_description>Our fruit punch is directly delivered from Minute Maid. Minute Maid Fruit Punch combines a number of fruit flavors together in a refreshing, delicious blend, 
+                            that is made with real fruit juice and with natural flavors. The Fruit Punch's main ingredients are filtered water, fruit juices from concentrate(grape, pineapple, 
+                            pear, and/or apple), sugar/glucose-fructose, natural flavors, citric acid, ascorbic acid(vitamin c), grape skin extract and stevia extract.
+			</more_description>
+		</product>
+		<product>
+			<code>18</code>
+			<name>Orange Juice</name>
+			<brand>Minute Maid</brand>
+			<description>A delectable and refreshing blend of 100% natural orange juices.</description>
+			<price>2.25</price>
+			<weight>1.75L</weight>
+			<quantity>10</quantity>
+			<more_description> We offer a refreshing Orange Juice that is manufactured from Minute Maid, made from perfectly riped, natural oranges which creates an authentic and delicious 
+                            beverage with 100% orange juice concentrate. It's main ingredients are filtered water and concretrated orange juice.  
+			</more_description>
+		</product>
+		<product>
+			<code>19</code>
+			<name>Monster Energy Drink</name>
+			<brand>Monster</brand>
+			<description>An energy drink made from taurine.</description>
+			<price>2.75</price>
+			<weight>473mL</weight>
+			<quantity>10</quantity>
+			<more_description>This refrenshing caffeinated energy drink was introduced by Hansen Natural Company in 2002, which includes ingredients such as: 
+                            carbonated water, sucrose, glucose, citric acid, natural flavors, taurine, sodium citrate, color added, panax ginseng root extract, L-carnitine, 
+                            L-tratarate, caffeine, sorbic acid, benzoic acid, niacinamide, sodium chloride, glycine max glucoronolactone, inositol, guarana seed extract, pyridoxine hydrochloride, 
+                            sucrolase, riboflavinm maltodextrin and cyanocobalamin.
+			</more_description>
+		</product>
+		<product>
+			<code>20</code>
+			<name>RedBull Energy Drink</name>
+			<brand>RedBull</brand>
+			<description>RedBull is an energy that "Gives You Wings".</description>
+			<price>1.99</price>
+			<weight>355mL</weight>
+			<quantity>10</quantity>
+			<more_description>The Red Bull we offer is an energy drink which is sold by Red Bull GmbH and was introduced in 1987. The Red Bull drink has the highest market share of any 
+                            drink in the world with the unique and distinct slogan "Red Bull gives you wings." It's main ingredients are caffeine, taurine, glucoronolactone, sucrose and glucose, 
+                            B-group vitamins, and alpine spring water. 
+			</more_description>
+        </product>
+    </beverages_aisle>
+    <fruits_vegetables_aisle>
+        <product>
+          <code>27</code>
+          <name>Royal Gala Apples</name>
+          <brand>Royal Gala</brand>
+          <description>Royal Gala Apples are bi-coloured with an attractive orange-red blush, which is most commonly striped and exposes a white-yellow background colouration. The fruit has sweet, yellowish flesh and an attractive crisp texture. Royal Gala Apples are aromatically sweet and snappy which makes it ideal as a healthy ready-to-eat snack. Our Royal Gala Apples are carefully sourced from various countries with the best growing conditions per season, to ensure our customers with a year-round supply of this beloved "gourmet apple" that is a staple among varieties of its kind.</description>
+          <price>4.50</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+        </product>
+        <product>
+          <code>28</code>
+          <name>Chiquita Bananas</name>
+          <brand>Chiquita</brand>
+          <description>Our Organic Bananas are deliciously low in calories, have no fat, no sodium, and no cholesterol. They are a healthy source of fiber, Potassium, Vitamin B6, Vitamin C and various antioxidants and phytonutrients.</description>
+          <price>1.90</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+        </product>
+        <product>
+          <code>29</code>
+          <name>Zespri Kiwis</name>
+          <brand>Zespri</brand>
+          <description>Kiwis are one of the perfect fruits one can incorporate in their diet. Each one has Potassium content as much as a banana and packed with Vitamin C higher than an orange, as well as high levels of Beta-Carotene, Vitamin A and E. Its seeds are rich in Alpha-Linoleic Acid, which is an Omega-3 essential fatty acid. It is also rich in fiber and have antioxidants which are considered great cancer fighters.</description>
+          <price>4.99</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+        </product>
+        <product>
+          <code>30</code>
+          <name>Papaya Fruit</name>
+          <brand>Del Monte</brand>
+          <description>Our papayas are a smaller variety compared to other papayas. The skin of the papaya is thin and yellow. The orange flesh of the solo papaya is deliciously sweet. There are small black seeds in the middle of the fruit.</description>
+          <price>3.75</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+        </product>
+        <product>
+          <code>31</code>
+          <name>Pictsweet Farms Broccoli</name>
+          <brand>Pictsweet</brand>
+          <description>Broccoli is high in vitamin C and vitamins A, and K, calcium, folate, and iron. It is also fat free, sodium free, and cholesterol free. It contains dietary fiber that is essential in the fight against obesity, heart disease, hypertension, diabetes, high blood cholesterol, and ulcers.</description>
+          <price>3.50</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+        </product>
+        <product>
+          <code>32</code>
+          <name>Carrots</name>
+          <brand>Bolthouse</brand>
+          <description>Carrots are one of the most popular root vegetable around owing to its versatility in kitchen use and of course, for its wide-range of healthy and nutritional benefits. They come in many colors like purple, yellow, red and white, but the orange variety remains the most common ones. Carrots get their bright-coloured skin from Beta-Carotene, a nutrient that the body readily converts into Vitamin A which is very significant in the support of eye health and prevention of eye diseases. Depending on variety and cultivation, Carrots are normally having sweet flavor and can be juicy and delicious. Our Sama Carrots are freshly flown from Lebanon and guarantees you the best in season Carrots to enjoy.</description>
+          <price>2.25</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+        </product>
+        <product>
+          <code>33</code>
+          <name>Lettuce</name>
+          <brand>Bolthouse</brand>
+          <description>Our Mixed Lettuce include a wonderful selection of Lollo Rosso, ‘Garnet Rosa’, ‘Merlot Flame’, ‘Devil’s Ear’, Butterhead, Green Oak Leave, Red Oak Leave or any of our other heirloom varieties. Selection depends on daily availability. Lettuce have been cultivated for thousands of years. They were first grown by the ancient Egyptians and were then spread by the Romans into the rest of Europe. Lettuce come in lots of different colours, shapes and sizes and we are growing a large selection of seasonal varieties all year round.</description>
+          <price>1.99</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+        </product>
+        <product>
+          <code>34</code>
+          <name>Assorted Bell Peppers</name>
+          <brand>Bolthouse</brand>
+          <description>Capsicums or bell peppers are aptly called by their characteristically large bell shape. They commonly come in various colors of green, red, yellow, orange and even purple. While they belong in the same family of peppers, Capsicums are not spicy and are in fact sweet, tangy and are similarly pungent in smell. They are crunchy and can be eaten both raw and cooked. They are popular cooking ingredients in the culinary world, as well as even in the most humble home dishes.</description>
+          <price>2.25</price>
+          <weight>1000 g</weight>
+          <quantity>10</quantity>
+          </product>
+</fruits_vegetables_aisle>
+</products>
