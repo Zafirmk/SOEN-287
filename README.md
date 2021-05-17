@@ -30,5 +30,3 @@ Project Solution
 
 ## Website URL
 <a href="https://mcjawz.herokuapp.com/">![alt text](https://raw.githubusercontent.com/Zafirmk/SOEN-287/main/images/favicon.ico "Title")</a>
-
-
