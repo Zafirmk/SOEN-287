@@ -1,0 +1,288 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #ecf0f1;
+}
+
+a{
+    color: white;
+    display: inline-block;
+}
+
+a:hover{
+    color: grey;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.title{
+    background-color: rgb(51,51,51) ;
+    text-align: center;
+    font-size: large;
+    padding-top: 10px;
+    color: white;
+    position: relative;
+
+}
+
+.row-subheader{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.aisles{
+    text-align: left;
+    padding-top: 5px;
+    background-color: rgb(51,51,51);
+    padding-bottom: 10px;
+}
+
+.myCartContainer{
+    background-color: rgb(51,51,51);
+    text-align: right;
+    position: flex;
+    padding-bottom: 10px;
+}
+
+.row-center{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.shoppingcarticon{
+    height: 25px;
+    width: 25px;
+    position: relative;
+}
+
+.card-deck{
+    max-width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.card-size{
+    width: 400px;
+    height: 200px;
+}
+
+.incdec{
+    font-size: 15px;
+}
+
+.pricing{
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.quantity{
+    text-align: center;
+}
+
+.addToCart{
+    float: center;
+    margin-top: 10px;
+}
+
+.card{
+    margin-top: 20px;
+}
+
+.card-deck{
+    margin-right: 0px;
+    display: flex;
+}
+
+a.item-link{
+    color: black;
+}
+
+a.item-link:hover{
+    text-decoration: none;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(51,51,51);
+    color: white;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+  }
+
+.footer-text{
+    padding: 10px 50px;
+    text-align: left;
+    color: white;
+    display: flex;
+}
+
+.footer-name{
+    color: white;
+    padding: 10px 50px;
+    width: 100%;
+    text-align: right;
+}
+
+.card-img-top{
+    position: flex;
+}
+ 
+.bev{
+    width: 200px;
+    height: 250px;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.bev-prod{
+    width: 450px;
+}
+
+@media (max-width: 1024px){
+    .myCartContainer{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .aisles{
+        text-align: center;
+    }
+
+    .card-deck{
+        max-width: 100%;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    .bev{
+        width: 180px;
+        height: 250px;
+    }
+
+    .bev-prod{
+        width: 400px;
+    }
+}
+
+@media (max-width: 991px){
+    .myCartContainer{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .aisles{
+        text-align: center;
+    }
+
+    .card-deck{
+        max-width: 100%;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    .bev{
+        width: 180px;
+        height: 250px;
+    }
+    .bev-prod{
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px){
+    .myCartContainer{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .aisles{
+        text-align: center;
+    }
+
+    .bev{
+        width: 180px;
+        height: 250px;
+    }
+
+    .card-deck{
+        max-width: 100%;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    .bev-prod{
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    .myCartContainer{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .card{
+        text-align: center;
+    }
+
+    .card-title{
+        text-align: center;
+    }
+
+    .aisles{
+        text-align: center;
+    }
+    .bev{
+        width: 250px;
+        height: 400px;
+    }
+    .card-deck{
+        max-width: 100%;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    .bev-prod{
+        width: 300px;
+    }
+
+}
+@media (max-width: 320px){
+    .myCartContainer{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .card{
+        text-align: center;
+    }
+
+    .card-title{
+        text-align: center;
+    }
+
+    .card-deck{
+        max-width: 100%;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    .aisles{
+        text-align: center;
+    }
+    .bev{
+        width: 330px;
+        height: 500px;
+    }
+    .bev-prod{
+        width: 200px;
+    }
+
+}

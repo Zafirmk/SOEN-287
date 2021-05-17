@@ -1,0 +1,208 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+
+p {
+    color: #8f8f8f;
+}
+
+
+hr {
+    border: dotted #EAF6F6 6px;
+    margin: 0 auto;
+    border-bottom: none;
+    width: 4%;
+    margin-bottom: 10px;
+}
+
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+
+#title {
+    background-color: #2B354B;
+    color: #ffffff;
+}
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.footer-text{
+    padding: 10px 50px;
+    text-align: left;
+    color: white;
+    display: flex;
+}
+
+.footer-name{
+    color: white;
+    padding: 10px 50px;
+    width: 100%;
+    text-align: right;
+}
+
+
+
+.addTocartButtonText {
+    display: inline-flex;
+    padding-left: 10px;
+}
+
+
+
+#features {
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+#footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+.container-fluid {
+    padding: 3% 15% 10% 15%;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-item {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.download-button {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+.title-image {
+    position: absolute;
+    width: 120%;
+    left: 265%;
+    top: -250px;
+}
+
+.feature-heading {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.feature-desc {
+    color: #8f8f8f;
+}
+
+.feature-img {
+    color: #0073ff;
+    font-size: 4rem;
+    align-self: center;
+    padding-bottom: 30px;
+}
+
+.feature-img:hover {
+    color: #2B354B;
+}
+
+
+.card-deck {
+    padding: 5% 10%;
+    padding-top: 50px;
+    background-color: #2B354B;
+    margin: auto;
+    width: 100%;
+}
+
+.card {
+    margin-top: 5%;
+}
+
+
+
+@media (max-width: 992px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        padding-top: 60px;
+        width: 50%;
+    }
+
+    .press-image {
+        margin: 40px 50px;
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1832px) {
+
+
+    .title-image {
+        width: 90%;
+        padding-top: 10%;
+        margin-left: 10%;
+
+    }
+
+}

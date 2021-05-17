@@ -1,0 +1,229 @@
+body{
+
+background-color: black;
+width: 100%;
+}
+
+.navbar .nav-item {
+
+    font-size: 1.3rem;
+}
+
+.navbar{
+
+padding: 20px;
+margin-bottom: 0px;
+}
+
+.header a{
+
+  color: #F2F2F2;
+}
+
+.header a:hover{
+
+  color: grey;
+}
+
+section.header{
+
+  background-color: #192A40;
+}
+
+section.subheader{
+
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  background: #223A59;
+  height: 100px;
+}
+
+.subheader a{
+
+  color: #F2F2F2;
+      display: inline-block;
+}
+
+.subheader a:hover{
+
+  color: #F2F2F2;
+}
+
+@media (max-width: 767px) {
+
+    section.subheader {
+
+          height: 120px;
+    }
+
+    .row .links{
+      text-align: center;
+    }
+
+    .row .cart{
+      text-align: center;
+    }
+
+    .descbox img{
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .row .mycontainer{
+      margin-bottom: 20px;
+      margin-top: 0px;
+      text-align: center;
+    }
+
+}
+
+@media (max-width: 554px) {
+
+    section.subheader {
+
+          height: 155px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    section.subheader {
+
+          height: 180px;
+    }
+}
+
+.links{
+
+  text-align: left;
+}
+
+.cart{
+
+  text-align: right;
+  }
+
+.img-thumbnail{
+
+  height: 200px;
+  width: 200px;
+}
+
+.itemsbox{
+
+text-align: center;
+background-color: #F2F2F2;
+}
+
+.cart .cart-icon{
+
+  color: red;
+}
+
+.cart-icon{
+
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+
+.numberinput{
+
+  padding-left: 10px;
+  text-align: left;
+  width: 100px;
+}
+
+.productname{
+
+  color: black;
+}
+
+.product{
+
+  padding: 20px;
+}
+
+.container{
+
+  bottom:-100px;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #192A40;
+}
+
+.footer p {
+    color: lightgrey;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: lightgrey;
+}
+
+.footer-item {
+    align-self: center;
+}
+
+/* Products CSS */
+
+section.descbox{
+
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: lightgrey;
+  padding: 10px;
+  margin: 100px 60px 190px 60px;
+  height: 500px;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+.descproducts{
+
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 345px;
+}
+
+.descbox p{
+
+  margin: 0px;
+}
+
+.incDecButton{
+
+  text-align: center;
+}
+
+.incDecButton .cart-icon{
+
+  margin-top: 4px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.incDecButton .btn{
+
+  height: 40px;
+}
+
+.mycontainer{
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.descbox .container{
+
+  padding: 5px;
+}

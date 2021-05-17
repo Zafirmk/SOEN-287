@@ -1,0 +1,221 @@
+
+html, body{
+  min-height: 100%;
+  background-color: white;
+}
+
+.navbar{
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.header a{
+  color: #F2F2F2;
+}
+
+.header a:hover{
+  color: grey;
+}
+
+section.header{
+  background-color: #192A40;
+}
+
+section.subheader{
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  background: #223A59;
+  height: 100px;
+}
+
+.subheader a{
+  color: #F2F2F2;
+      display: inline-block;
+}
+
+.subheader a:hover{
+  color: #F2F2F2;
+}
+
+@media (max-width: 767px) {
+    section.subheader {
+          height: 120px;
+    }
+
+    .row .links{
+      text-align: center;
+    }
+
+    .row .cart{
+      text-align: center;
+    }
+
+    div.cartitems .row{
+      margin-right: 5px;
+    }
+
+    div.cartitems{
+
+      width: auto;
+      float:none;
+    }
+
+    section.pricebox{
+
+      width: auto;
+      float: none;
+    }
+
+    section.moreitems{
+
+      height: 0px;
+    }
+
+    div.cartitems .removebutt{
+       margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 672px) {
+    section.subheader {
+          height: 150px;
+    }
+}
+
+@media (max-width: 350px) {
+    section.subheader {
+          height: 180px;
+    }
+}
+
+.links{
+  text-align: left;
+}
+
+.cart{
+  text-align: right;
+  }
+
+.cart-icon{
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.cartitems .row {
+
+  height: 100px;
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin: 5px;
+}
+
+.img-thumbnail{
+
+  height: 70px;
+  width: 70px;
+}
+
+.itemdesc{
+  text-align: right;;
+}
+
+.row .itemdesc p{
+  margin-top: 25px;
+}
+
+@media (max-width: 1431px){
+  div.cartitems .itembuttons{
+     margin-top: -5px;
+  }
+}
+
+@media (max-width: 400px){
+  .row .nicebuttons{
+    right: 10px;
+  }
+}
+
+.images{
+  top: 20px;
+}
+
+.itembuttons{
+  text-align: right;
+  margin-top: 10px;
+  display: inline-grid;
+}
+
+.itembuttons .btn-group .btn{
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.itembuttons .btn-group{
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+
+.itembuttons .removebutt{
+   margin: 5px;
+}
+
+.numberinput{
+  width: 50px;
+}
+
+.cartitems{
+  float:left;
+  width: 50%;
+  background-color: white;
+}
+
+.pricebox{
+  float: right;
+  width: 50%;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.pricebox .row {
+
+  height: 65px;
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.moreitems{
+
+  height: 790px;
+  background-color: white;
+}
+
+
+.footer {
+
+    bottom: 0;
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #192A40;
+    width: 100%;
+}
+
+.footer p {
+    color: lightgrey;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: lightgrey;
+}
+
+.footer-item {
+    align-self: center;
+}

@@ -1,0 +1,76 @@
+html, body{
+
+  background-color: #F2F2F2;
+  height: 100%;
+}
+
+h1{
+
+  font-size: 20px;
+}
+
+.navbar{
+
+background-color: #192A40;
+padding: 20px;
+margin-bottom: 0px;
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+}
+
+.navbar .nav-item {
+    font-size: 1.3rem;
+}
+
+.signupBox{
+
+  min-height: 100%;
+  padding: 10px;
+  margin: 70px;
+  background-color: #192A40;
+  text-align: center;
+}
+
+.footer {
+
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #192A40;
+}
+
+.footer p {
+    color: lightgrey;
+    margin: 0 10px;
+}
+
+.footer-item {
+    align-self: center;
+}
+
+p{
+  padding: 10px 10px 0px 10px;
+  color: White;
+}
+
+.button{
+
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inputbox{
+
+  padding: 5px;
+  text-align: center;
+}
+
+h4{
+
+  color: #F2F2F2;
+}
