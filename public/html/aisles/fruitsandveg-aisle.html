@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>McJawz | Fruit & Veg</title>
+    <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../../public/css/fruitsandveg-aisle.css">
+    <meta http-equiv = "refresh" content = "0; url = ../../php/fruitsandveg-aisle.php" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="../../js/fruitsandveg-aisle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload='updateValues()'>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../html/index.html">
+            <img style="margin-right: 5px;" class="icon-logo" src="../../../images/mcJawz_logo_no_txt.png" width="40"
+                height="40" alt="">
+            McJawz
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Subheader -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 title">
+                <h2>Fruits and Vegetables</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 aisles">
+                <a href="../../../public/html/aisles/bakery.html">Bakery</a>
+                |
+                <a href="../../../public/html/aisles/beverages-aisle.html">Beverages</a>
+                |
+                <a href="../../../public/html/aisles/dairyandeggs-aisle.html">Dairy & Eggs</a>
+                |
+                <a href="../../../public/html/aisles/fruitsandveg-aisle.html">Fruits & Vegetables</a>
+                |
+                <a href="../../../public/html/aisles/poultry-aisle.html">Meat, Poultry & Fish</a>
+                |
+                <a href="../../../public/html/aisles/snack_aisle.html">Snacks</a> 
+            </div>
+
+            <div class="col-lg-6 col-md-12 myCartContainer">
+                <img class="shoppingcarticon" src="../../../images/shoppingcarticon.png" alt="">
+                <a href="../../../public/html/cart.html">
+                    <p>My Cart</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Items -->
+    <div class="card-deck">
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-apples.html">
+                        <img class="card-img-top" src="../../../images/apples.jpg" alt="Apples">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Gala Apples</h5>
+                            <p class="card-text">Crisp red apples from New Zealand.</p>
+                            <p class="card-text"><small class="text-muted">52 cal/Apple</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$4.50/kg</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-apple')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-apple" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-apple')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-bananas.html">
+                        <img class="card-img-top" src="../../../images/bananas.jpg" alt="Bananas">
+                        <div class="card-body">
+                            <h5 class="card-title">Chiquita Bananas</h5>
+                            <p class="card-text">Chiquita Bananas From South America.</p>
+                            <p class="card-text"><small class="text-muted">89 cal/Banana</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$1.90/kg</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-bananas')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-bananas" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-bananas')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-kiwi.html">
+                        <img class="card-img-top" src="../../../images/kiwi.jpg" alt="Kiwi">
+                        <div class="card-body">
+                            <h5 class="card-title">Zespri Kiwifruit</h5>
+                            <p class="card-text">Refreshing Zespri Kiwis from New Zealand.</p>
+                            <p class="card-text"><small class="text-muted">61 cal/Kiwi</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$4.99/kg</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-kiwi')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-kiwi" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-kiwi')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-papaya.html">
+                        <img class="card-img-top" src="../../../images/papaya.jpg" alt="Papaya">
+                        <div class="card-body">
+                            <h5 class="card-title">Papaya Fruit</h5>
+                            <p class="card-text">Fresh & Authentic Papaya Fruit from India.</p>
+                            <p class="card-text"><small class="text-muted">77 cal/Papaya</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$3.75/Piece</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-papaya')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-papaya" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-papaya')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-broccoli.html">
+                        <img class="card-img-top" src="../../../images/broccoli.jpg" alt="Broccoli">
+                        <div class="card-body">
+                            <h5 class="card-title">Pictsweet Farms Broccoli</h5>
+                            <p class="card-text">Fresh Broccoli from Mallorca, Spain.</p>
+                            <p class="card-text"><small class="text-muted">34 cal/Broccoli</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$3.50/Piece</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-broccoli')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-broccoli" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-broccoli')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-carrot.html">
+                        <img class="card-img-top" src="../../../images/carrots.jpg" alt="Carrot">
+                        <div class="card-body">
+                            <h5 class="card-title">Carrots</h5>
+                            <p class="card-text">Locally Grown Canadian Carrots From Alberta.</p>
+                            <p class="card-text"><small class="text-muted">41 cal/Carrot</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$2.25/kg</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-carrot')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-carrot" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-carrot')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-lettuce.html">
+                        <img class="card-img-top" src="../../../images/lettuce.jpg" alt="Lettuce">
+                        <div class="card-body">
+                            <h5 class="card-title">Lettuce</h5>
+                            <p class="card-text">Middle Eastern Romaine Lettuce From Jordan.</p>
+                            <p class="card-text"><small class="text-muted">17 cal/Apple</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$1.99/Piece</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-lettuce')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-lettuce" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-lettuce')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/fruitsandveg-bellpepper.html">
+                        <img class="card-img-top" src="../../../images/bellpepper.jpg" alt="Bell Pepper">
+                        <div class="card-body">
+                            <h5 class="card-title">Assorted Bell Peppers</h5>
+                            <p class="card-text">Mix Bell Peppers From Valencia, Spain.</p>
+                            <p class="card-text"><small class="text-muted">40 cal/Pepper</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$2.25/Pack</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-bellpepper')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-bellpepper" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-bellpepper')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            <a href="../../../public/html/admin.html">Admin</a>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

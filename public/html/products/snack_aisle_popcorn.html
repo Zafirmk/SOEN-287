@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McJawz | Snacks | Extra Buttery 10 Pack Popcorn</title>
+    <link rel="stylesheet" href="../../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../public/css/michael_snacks.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="updateQuantities(); updateProductInfo(6)">
+    <script type="text/javascript" src="../../js/michael.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../../public/html/index.html">
+            <img style="margin-right: 5px;" class="icon-logo" src="../../../images/mcJawz_logo_no_txt.png" width="40"
+                height="40" alt="">
+            McJawz
+        </a>
+
+        <div class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Subheader -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 title">
+                <h2 id="product-page-name-5">Extra Buttery 10 Pack Popcorn</h2>
+            </div>
+        </div>
+
+        <div class="row subheader">
+            <div class="col-lg-8 aisles text-dark">
+                <a href="../../../public/html/aisles/bakery.html">Bakery</a>
+                |
+                <a href="../../../public/html/aisles/beverages-aisle.html">Beverages</a>
+                |
+                <a href="../../../public/html/aisles/dairyandeggs-aisle.html">Dairy & Eggs</a>
+                |
+                <a href="../../../public/html/aisles/fruitsandveg-aisle.html">Fruits & Vegetables</a>
+                |
+                <a href="../../../public/html/aisles/poultry-aisle.html">Meat, Poultry & Fish</a>
+                |
+                <a href="../../../public/html/aisles/snack_aisle.html">Snacks</a>
+            </div>
+
+            <div class="col-lg-4 col-md-12 myCartContainer">
+                <img class="shoppingcarticon" src="../../../images/shoppingcarticon.png" alt="">
+                <a href="../../../public/html/cart.html">
+                    <p>My Cart</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info card text-center my-5">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="../../../images/popcorn.jpg" class="card-img" alt="Popcorn">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title" id="product-name-5">Extra Buttery 10 Pack Popcorn</h2>
+                    <p class="card-text text-muted" id="product-brand-5">ORVILLE REDENBACHER'S</p>
+                    <p class="card-text text-muted" id="product-weight-5"><small>820 g</small></p>
+
+                    <p class="more-description text-muted" id="product-description-5">Treat yourself to the original.
+                        Made with the perfect balance
+                        of butter flavor and salt, our classic microwave butter popcorn is packed up in mini microwave
+                        bags for easy snacking.</p>
+
+                    <button class="btn btn-more-descr mt-3" onclick="moreDescription()">More Description</button>
+
+                    <div class="row quantity mt-5">
+                        <div class="pricing m-auto">
+                            <p class="base-price d-inline" id="product-price-5">$8.49</p>
+                            <p class="subtotal-popcorn d-inline ml-3" id="product-subtotal-5">(Subtotal: $8.49)</p>
+                        </div>
+                        <div class="col-lg-12 incDecButton">
+                            <span class="input-group-btn">
+                                <button type="button" class="quantity-minus btn btn-danger btn-number"
+                                    onclick="minus(5); updateProductSubtotal(5)" data-type="minus" data-field="">
+                                    -
+                                </button>
+                            </span>
+
+                            <input class="quantity-input" id="product-qty-5" size="3" type="text" value="1">
+
+                            <span class="input-group-btn">
+                                <button type="button" class="quantity-plus btn btn-success btn-number"
+                                    onclick="plus(5); updateProductSubtotal(5)" data-type="plus" data-field="">
+                                    +
+                                </button>
+                            </span>
+                            <button type="button" class="btn btn-info ml-3">
+                                <img style="margin-right: 10px;" class="shoppingcarticon"
+                                    src="../../../images/shoppingcarticon.png" alt="">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            <a href="../../../public/html/admin.html">Admin</a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

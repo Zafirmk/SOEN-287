@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/backstore.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McJawz | Product List</title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <script src="../../../public/js/poultry-aisle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../html/index.html">
+        <img style="margin-right: 5px;" class="icon-logo" src="../../images/mcJawz_logo_no_txt.png" width="40" height="40" alt="">
+        McJawz
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../html/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/login.html">Log in</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-name">
+    <div>
+       Product List
+    </div>
+</section>
+
+
+<body onload="updateAllValues()">
+<div class=backstore-p7>
+ <div class="row mt-2">
+      <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+        <img src="../../images/beyondmeat.png" class="img-fluid " style="background-color: white;" alt="BeyondMeat">
+      </div> 
+      <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+        <div class="card text-center">
+                <div class="card-header bg-dark text-white">
+                    <h1>Beyond Meat </h1></div>
+        <div class="card-body my-auto ">
+                <div class="col-xl-8 col-lg-8 col-md-8 align-self-center">
+                    <h5 class="card-title d-inline">Price: $10.99</h5>
+                    <h6 class="card-title">Quantity Remaining:</h6>
+                    <span class="input-group-btn">
+                      <button onclick="decrement('amount-bm');" class="quantity-left-minus btn btn-danger btn-number"
+                          data-type="minus" data-field="">-
+                      </button></span>
+
+                  <input id='amount-bm' size="3" type="text" value="0">
+                  
+                  <span class="input-group-btn">
+                  <button onclick="increment('amount-bm');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                          data-type="plus" data-field="">+
+</button>                </span>
+               
+
+        <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+        <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+        <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+
+</script>
+
+
+  <div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/chickenbreast.png"class="img-fluid" style="background-color: white;" alt="chickenbreast">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Chicken Breast </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $8.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-cb');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-cb' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-cb');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/chickenthigh.png"class="img-fluid" style="background-color: white;" alt="chickenthigh">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Chicken Thighs </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $7.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-ct');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-ct' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-ct');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+             </span>
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/chickenleg.png" class="img-fluid" style="background-color: white;" alt="chickenleg">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Chicken leg </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $6.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-cl');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-cl' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-cl');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+</span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/groundmeat.png" class="img-fluid" style="background-color: white;"  alt="groundmeat">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Ground Meat </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $8.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-gm');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-gm' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-gm');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/salmon.png" class="img-fluid" style="background-color: white;" alt="salmon">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Atlantic Salmon </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $14.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-sal');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-sal' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-sal');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/apples.jpg" class="img-fluid" alt="apples">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Apples </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $4.50</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-app');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-app' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-app');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/bananas.jpg" class="img-fluid" alt="bananas">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Chiquita Bananas </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $6.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-ban');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-ban' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-ban');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/kiwi.jpg" class="img-fluid" alt="kiwi">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Zespri Kiwi </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $4.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-kiwi');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-kiwi' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-kiwi');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/papaya.jpg" class="img-fluid" alt="papaya">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Papaya</h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $3.75</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-pap');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-pap' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-pap');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/broccoli.jpg" class="img-fluid" alt="broccoli">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> broccoli </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $3.50</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-broc');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-broc' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-broc');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/carrots.jpg" class="img-fluid" alt="carrots">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Carrots </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $2.25</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-carr');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-carr' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-carr');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/lettuce.jpg" class="img-fluid" alt="lettuce">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Lettuce</h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $1.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-lett');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-lett' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-lett');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/bellpepper.jpg" class="img-fluid" alt="bellpepper">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Bell Peppers </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $6.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-bell');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-bell' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-bell');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/oreo.jpg" class="img-fluid" alt="oreo">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Oreos </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $3.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-ore');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-ore' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-ore');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/chips.jpg" class="img-fluid" alt="chips">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Lay's Chips</h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $0.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-chips');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-chips' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-chips');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/bars.jpg" class="img-fluid" alt="bars">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Nature Valley bars </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $2.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-nvb');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-nvb' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-nvb');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/pistachios.jpg" class="img-fluid" alt="pistachios">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Pistachios </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $7.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-pist');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-pist' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-pist');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/pretzels.jpg" class="img-fluid" alt="pretzels">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>pretzels</h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $3.99</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-pret');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-pret' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-pret');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/popcorn.jpg" class="img-fluid" alt="popcorn">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Popcorn </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $5.49</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-pop');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-pop' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-pop');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/evian-water.jpg" class="img-fluid" alt="evian-water">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Evian Water </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $1.20</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn"></span>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-ew');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-ew' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-ew');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/sprite.jpg" class="img-fluid" alt="sprite">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1>Sprite </h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $1.80</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-sprite');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-sprite' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-sprite');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+      <img src="../../images/cola.jpg" class="img-fluid" alt="cola">
+    </div> 
+    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+      <div class="card text-center">
+              <div class="card-header bg-dark text-white">
+                  <h1> Coke</h1></div>
+      <div class="card-body my-auto ">
+              <div class="col-xl-8 col-lg-8 col-md-8">
+                  <h5 class="card-title">Price: $1.80</h5>
+                  <h6 class="card-title">Quantity Remaining: 1000</h6>
+                  <span class="input-group-btn">
+                    <button onclick="decrement('amount-coke');" class="quantity-left-minus btn btn-danger btn-number"
+                        data-type="minus" data-field="">-
+                    </button></span>
+
+                <input id='amount-coke' size="3" type="text" value="0">
+                
+                <span class="input-group-btn">
+                <button onclick="increment('amount-coke');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                        data-type="plus" data-field="">+
+</button>
+                </span>
+             
+
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+      <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/fanta.png" class="img-fluid" alt="fanta">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1> Fanta</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $1.80</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-fanta');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-fanta' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-fanta');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/fruitpunch2.png" class="img-fluid" style="background-color: white;" alt="fruitpunch">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1> Fruit Punch</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $2.25</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-fp');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-fp' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-fp');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/og_juice.jpg"class="img-fluid" style="background-color: white;" alt="orangejuice">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1> Orange Juice</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $2.25</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-oj');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-oj' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-oj');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/energydrink.jpg"class="img-fluid" style="background-color: white;" alt="energydrink">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1> Monster Energy Drink</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $2.75</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-mon');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-mon' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-mon');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/redbull.jpg"class="img-fluid" style="background-color: white;" alt="energydrink">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1> Red Bull Energy Drink</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $1.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-rb');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-rb' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-rb');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/yoplait_yogurt.jpg"class="img-fluid" style="background-color: white;" alt="yogurt">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Source Strawberry Yogurt</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $3.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-ssy');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-ssy' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-ssy');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/silk_almondmilk.jpg"class="img-fluid" style="background-color: white;" alt="Silk Almond Milk">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Silk Almond Milk</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $4.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-sam');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-sam' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-sam');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/quebon_milk.jpg"class="img-fluid" style="background-color: white;" alt="quebonMilk">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Quebon Milk</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $6.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-qm');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-qm' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-qm');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/ptitqc_cheese.jpg"class="img-fluid" style="background-color: white;" alt="cheese">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Quebec Cheese</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $2.75</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-qc');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-qc' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-qc');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/burnbrae_browneggs.jpg"class="img-fluid" style="background-color: white;" alt="brown eggs">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Brown Eggs</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $4.50</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-be');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-be' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-be');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/burnbrae_whiteeggs.jpg"class="img-fluid" style="background-color: white;" alt="white eggs">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>White Eggs</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $2.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-we');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-we' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-we');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/baguette.jpg"class="img-fluid" style="background-color: white;" alt="Baguette">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>French Baguette</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $2.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-fb');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-fb' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-fb');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/gadoua_whitebread.jpg"class="img-fluid" style="background-color: white;" alt="white bread">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>White Bread Loaf</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: 3.25</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-wbl');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-wbl' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-wbl');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/gadoua_wholewheatbread.jpg"class="img-fluid" style="background-color: white;" alt="Whole Wheat Bread">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Brown Bread Load</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $3.25</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn"></span>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-bbl');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-bbl' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-bbl');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/gadoua_raisinbread.jpg"class="img-fluid" style="background-color: white;" alt="Raisin Bread">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Nuts & Herbs Bread Loaf</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $3.39</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-nhl');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-nhl' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-nhl');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/croissant.png"class="img-fluid" style="background-color: white;" alt="croissant">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Croissant</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $0.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-croi');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-croi' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-croi');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/st.viateur_bagel.jpg"class="img-fluid" style="background-color: white;" alt="Bagel">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>St Viateur Bagel</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $2.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-bagel');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-bagel' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-bagel');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/chocolatine.jpg"class="img-fluid" style="background-color: white;" alt="chocolatine">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Chocolatine</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $0.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-chocola');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-chocola' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-chocola');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="card-body col-xl-4 col-lg-6 col-md-6 col-sm-6">
+    <img src="../../images/chocolatecake.png"class="img-fluid" style="background-color: white;" alt="Chocolate Cake">
+  </div> 
+  <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6 align-self-center " id="productCC">
+    <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+                <h1>Triple Chocolate Cake</h1></div>
+    <div class="card-body my-auto ">
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <h5 class="card-title">Price: $12.99</h5>
+                <h6 class="card-title">Quantity Remaining: 1000</h6>
+                <span class="input-group-btn">
+                  <button onclick="decrement('amount-tcc');" class="quantity-left-minus btn btn-danger btn-number"
+                      data-type="minus" data-field="">-
+                  </button></span>
+
+              <input id='amount-tcc' size="3" type="text" value="0">
+              
+              <span class="input-group-btn">
+              <button onclick="increment('amount-tcc');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                      data-type="plus" data-field="">+
+</button>
+              </span>
+           
+
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Add</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Edit</a>
+    <a href="#" class="btn btn-dark btn-md mt-2 d-block">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+</body>
+<section class="footer">
+    <div class="footer-item ml-3">
+        <a href="../html/admin.html"><p>Admin</p></a>
+    </div>
+    <div class="footer-item mr-3">
+        <p class="font-italic"></p>
+    </div>
+</section>
+    </body>
+</html>

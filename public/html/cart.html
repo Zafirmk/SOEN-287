@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>McJawz | Shopping Cart </title>
+    <meta http-equiv = "refresh" content = "0; url = ../php/cart.php"/>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../public/css/cart.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/cartnew.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src = "../js/dairyandeggs-aisle.js"></script>
+    <script src = "../js/cart.js"></script>
+</head>
+
+<body onload = 'setValues()'>
+
+  <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../public/html/index.html">
+            <img style="margin-right: 5px;" class="icon-logo" src="../../images/mcJawz_logo_no_txt.png" width="40"
+                height="40" alt="">
+            McJawz
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- Subheader -->
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 title">
+              <h2>Shopping Cart</h2>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 aisles">
+              <a href="../../public/html/aisles/bakery.html">Bakery</a>
+              |
+              <a href="../../public/html/aisles/beverages-aisle.html">Beverages</a>
+              |
+              <a href="../../public/html/aisles/dairyandeggs-aisle.html">Dairy & Eggs</a>
+              |
+              <a href="../../public/html/aisles/fruitsandveg-aisle.html">Fruits & Vegetables</a>
+              |
+              <a href="../../public/html/aisles/poultry-aisle.html">Meat, Poultry & Fish</a>
+              |
+              <a href="../../public/html/aisles/snack_aisle.html">Snacks</a>
+</div>
+
+          <div class="col-lg-6 col-md-12 myCartContainer">
+              <img class="shoppingcarticon" src="../../images/shoppingcarticon.png" alt="">
+              <a href="../../public/html/cart.html">
+                  <p>My Cart</p>
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Items in cart -->
+
+    <div class="cartitems">
+      <div class="container-fluid">
+
+        <div class="card">
+          <div class="col-4 images">
+            <img src="../../images/apples.jpg" alt="Apples" class="img-thumbnail">
+          </div>
+          <div class="d-flex justify-content-center">
+            <p>Royal Gala Apples</p>
+          </div>
+          <div class="itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button onclick="decrement('cart-add1')" type="button" class="btn btn-outline-danger">-</button>
+                <input id = "cart-add1" class="numberinput" type="number" value="0" min="0">
+              <button onclick="increment('cart-add1')" type="button" class="btn btn-outline-success">+</button>
+            </div>
+              <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="col-4 images">
+            <img src="../../images/broccoli.jpg" alt="Broccoli" class="img-thumbnail">
+          </div>
+          <div class="d-flex justify-content-center">
+            <p>Pictsweet Farms Broccoli</p>
+          </div>
+          <div class="itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button onclick="decrement('cart-add2')" type="button" class="btn btn-outline-danger">-</button>
+                <input id = "cart-add2" class="numberinput" class="numberinput" type="number" value="0" min="0">
+              <button onclick="increment('cart-add2')" type="button" class="btn btn-outline-success">+</button>
+            </div>
+            <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="col-4 images">
+            <img src="../../images/burnbrae_whiteeggs.jpg" alt="White Eggs" class="img-thumbnail">
+          </div>
+          <div class="d-flex justify-content-center">
+            <p>Burnbrae White Eggs</p>
+          </div>
+          <div class="itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button onclick="decrement('cart-add3')" type="button" class="btn btn-outline-danger">-</button>
+                <input id = "cart-add3" class="numberinput" class="numberinput" type="number" value="0" min="0">
+              <button onclick="increment('cart-add3')" type="button" class="btn btn-outline-success">+</button>
+            </div>
+            <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="col-4 images">
+            <img src="../../images/bars.jpg" alt="Nature Valley Bars" class="img-thumbnail">
+          </div>
+          <div class="d-flex justify-content-center">
+            <p>Nature Valley Bars</p>
+          </div>
+          <div class="itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button onclick="decrement('cart-add4')" type="button" class="btn btn-outline-danger">-</button>
+                <input id = "cart-add4" class="numberinput" class="numberinput" type="number" value="0" min="0">
+              <button onclick="increment('cart-add4')" type="button" class="btn btn-outline-success">+</button>
+            </div>
+            <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Total Price -->
+
+    <section class="pricebox">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <h6>Subtotal: </h6>
+          </div>
+
+          <div class="col-6">
+            <h6 id = "subTotal">0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>QST: </h6>
+          </div>
+
+          <div class="col-6">
+            <h6 id = "qstPrice">0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>GST: </h6>
+          </div>
+
+          <div class="col-6">
+            <h6 id = "gstPrice">0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>Shipping: </h6>
+          </div>
+
+          <div class="col-6">
+            <h6 id = "shippingPrice">0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>Estimated Total: </h6>
+          </div>
+
+          <div class="col-6">
+            <h6 id = "finalPrice">0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 nicebuttons">
+            <a href="index.html">
+              <div class="btn btn-primary btn-sm">Continue Shopping</div>
+            </a>
+          </div>
+          <div class="col-6 nicebuttons">
+            <button onclick="getPrices()" type="button" class="btn btn-success btn-sm">Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- More items -->
+    <div class="moreitems">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!-- <p>More items</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            <a href="admin.html">Admin</a>
+        </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>McJawz | Shopping Cart </title>
+    <link rel="stylesheet" href="../../public/css/cart.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+  </head>
+
+<body>
+
+  <!-- Header -->
+      <section class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="navbar navbar-expand-md ">
+                <a class="navbar-brand" href="../../public/html/index.html">
+                  <img src="../../images/mcJawz_logo_no_txt.png" alt="McJawz Logo"
+                   style="width:40px;">
+                  <d6 class="d-inline align-middle">McJawz</d6>
+                </a>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../public/html/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../public/html/signup.html">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../public/html/login.html">Login</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Subheader -->
+    <section class="subheader">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aislename">
+              <h3>Shopping Cart</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 ml">
+            <div class="links">
+            <a href="../../public/html/aisles/poultry-aisle.html">Meat, Poultry and Fish </a> |
+            <a href="../../public/html/aisles/fruitsandveg-aisle.html">Fruits and Vegetables</a> |
+            <a href="../../public/html/aisles/snack_aisle.html">Snacks</a> |
+            <a href="../../public/html/aisles/beverages-aisle.html">Beverages</a> |
+            <a href="../../public/html/aisles/bakery.html">Bakery </a> |
+            <a href="../../public/html/aisles/dairyandeggs-aisle.html">Dairy and Eggs </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 ml">
+            <div class="cart">
+              <a href="cart.html">
+                <img class="cart-icon" src="../../images/shoppingcarticon.png" alt="Cart Icon">
+                My Cart
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!-- Items in cart -->
+
+    <section class="cartitems">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-4">
+            <img src="../../images/apples.jpg" alt="Apples" class="img-thumbnail">
+          </div>
+          <div class="col-4 itemdesc">
+            <p>Apples</p>
+          </div>
+          <div class="col-4 itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger">-</button>
+                <input class="numberinput" size="3" type="number" value="0" min="0">
+              <button type="button" class="btn btn-outline-success">+</button>
+            </div>
+              <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img src="../../images/broccoli.jpg" alt="Broccoli" class="img-thumbnail">
+          </div>
+          <div class="col-4 itemdesc">
+            <p>Broccoli</p>
+          </div>
+          <div class="col-4 itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger">-</button>
+                <input class="numberinput" size="3" type="number" value="0" min="0">
+              <button type="button" class="btn btn-outline-success">+</button>
+            </div>
+            <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img src="../../images/burnbrae_whiteeggs.jpg" alt="White Eggs" class="img-thumbnail">
+          </div>
+          <div class="col-4 itemdesc">
+            <p>White Eggs</p>
+          </div>
+          <div class="col-4 itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger">-</button>
+                <input class="numberinput" size="3" type="number" value="0" min="0">
+              <button type="button" class="btn btn-outline-success">+</button>
+            </div>
+            <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img src="../../images/bars.jpg" alt="Nature Valley Bars" class="img-thumbnail">
+          </div>
+          <div class="col-4 itemdesc">
+            <p>Nature Valley Bars</p>
+          </div>
+          <div class="col-4 itembuttons">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-danger">-</button>
+                <input class="numberinput" size="3" type="number" value="0" min="0">
+              <button type="button" class="btn btn-outline-success">+</button>
+            </div>
+            <button type="button" class="btn btn-outline-danger removebutt">Remove</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Total Price -->
+
+    <section class="pricebox">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <h6>Subtotal</h6>
+          </div>
+
+          <div class="col-6">
+            <h6>0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>QST</h6>
+          </div>
+
+          <div class="col-6">
+            <h6>0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>GST</h6>
+          </div>
+
+          <div class="col-6">
+            <h6>0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>Shipping</h6>
+          </div>
+
+          <div class="col-6">
+            <h6>0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <h6>Estimated Total</h6>
+          </div>
+
+          <div class="col-6">
+            <h6>0.00$</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <a href="index.html">
+              <button type="button" class="btn btn-primary btn-sm">Continue Shopping</button>
+            </a>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-success btn-sm">Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- More items -->
+    <section class="moreitems">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!-- <p>More items</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+    <section class="footer">
+      <div class="footer-item ml-3">
+        <a href="../html/admin.html"><p>Admin</p></a>
+      </div>
+        <div class="footer-item mr-3">
+          <p class="font">Alan Matthew Vadlakunta, 40175007</p>
+        </div>
+    </section>
+
+  </body>
+</html>

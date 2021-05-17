@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=../php/user_list.php" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/css/michael_backend.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <title>McJawz | User List</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section class="header">
+        <nav class="header-nav">
+            <ul class="navbar navbar-left">
+                <li class="logo">
+                    <a class="mr-2" href="../../public/html/index.html">
+                        <img src="../../images/mcJawz_logo_no_txt.png" alt="">
+                    </a>
+                </li>
+                <li class="logo">
+                    <a href="../../public/html/index.html">
+                        McJawz
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar navbar-right">
+                <li class="login-signup">
+                    <a href="../../public/html/login.html">
+                        Login
+                    </a>
+                </li>
+                <li class="link-sep">|</li>
+                <li class="login-signup">
+                    <a href="../../public/html/signup.html">
+                        Sign Up
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Page Name -->
+    <section class="page-name">
+        <div>
+            User List
+        </div>
+    </section>
+
+    <!-- Subheader -->
+    <section class="subheader">
+        <nav class="subheader-nav">
+            <ul class="navbar navbar-left">
+                <li class="aisle-link">
+                    <a href="../../public/html/aisles/bakery.html">
+                        Bakery
+                    </a>
+                </li>
+                <li class="link-sep">|</li>
+                <li class="aisle-link">
+                    <a href="../../public/html/aisles/beverages-aisle.html">
+                        Beverages
+                    </a>
+                </li>
+                <li class="link-sep">|</li>
+                <li class="aisle-link">
+                    <a href="../../public/html/aisles/dairyandeggs-aisle.html">
+                        Dairy & Eggs
+                    </a>
+                </li>
+                <li class="link-sep">|</li>
+                <li class="aisle-link">
+                    <a href="../../public/html/aisles/fruitsandveg-aisle.html">
+                        Fruits & Vegetables
+                    </a>
+                </li>
+                <li class="link-sep">|</li>
+                <li class="aisle-link">
+                    <a href="../../public/html/aisles/poultry-aisle.html">
+                        Meat, Poultry & Fish
+                    </a>
+                </li>
+                <li class="link-sep">|</li>
+                <li class="aisle-link">
+                    <a href="../../public/php/snack_aisle.php">
+                        Snacks
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar navbar-right">
+                <li class="cart-link">
+                    <a href="../../public/html/cart.html">
+                        <img class="cart-icon" src="../../images/cart_transparent_black.png" alt="">
+                    </a>
+                </li>
+                <li class="cart-link">
+                    <a href="../../public/html/cart.html">Cart</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- User List -->
+    <section class="user-list">
+        <table class="table table-bordered bg-white">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th class="btn-col" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>James</td>
+                    <td>Kirk</td>
+                    <td>
+                        <div class="btn-cell">
+                            <button class="btn shadow-none btn-red mr-3">Delete</button>
+                            <a href="../../public/html/edit_user.html" class="btn shadow-none btn-yellow">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jean-Luc</td>
+                    <td>Picard</td>
+                    <td>
+                        <div class="btn-cell">
+                            <button class="btn shadow-none btn-red mr-3">Delete</button>
+                            <a href="../../public/html/edit_user.html" class="btn shadow-none btn-yellow">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Benjamin</td>
+                    <td>Sisko</td>
+                    <td>
+                        <div class="btn-cell">
+                            <button class="btn shadow-none btn-red mr-3">Delete</button>
+                            <a href="../../public/html/edit_user.html" class="btn shadow-none btn-yellow">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Kathryn</td>
+                    <td>Janeway</td>
+                    <td>
+                        <div class="btn-cell">
+                            <button class="btn shadow-none btn-red mr-3">Delete</button>
+                            <a href="../../public/html/edit_user.html" class="btn shadow-none btn-yellow">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Jonathan</td>
+                    <td>Archer</td>
+                    <td>
+                        <div class="btn-cell">
+                            <button class="btn shadow-none btn-red mr-3">Delete</button>
+                            <a href="../../public/html/edit_user.html" class="btn shadow-none btn-yellow">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="../html/edit_user.html" class="btn btn-blue shadow-none">Add User</a>
+        <button class="btn btn-blue shadow-none ml-3">Save</button>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-item ml-3">
+            <a href="../../public/html/admin.html">
+                <p>Admin</p>
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>

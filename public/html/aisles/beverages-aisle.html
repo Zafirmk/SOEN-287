@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv= "refresh" content = "0; url = ../../php/beverage-aisle.php" />
+    <title>McJawz | Beverages</title>
+    <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../public/css/beverage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="../../js/beverages-aisle.js"></script>
+    
+</head>
+
+<body onload="updateValues()">
+    
+    <!--NAVIGATIONAL BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../../public/html/index.html">
+            <img style="margin-right: 5px;" class="icon-logo d-inline-block align-top" src="../../../images/mcJawz_logo_no_txt.png" 
+            width="40" height="40" alt="">
+            McJawz
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--SUBHEADER-->
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 title">
+                    <h2>Beverages</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row-subheader">
+            <div class="col-lg-6 aisles">
+                <a href="../../../public/html/aisles/bakery.html">Bakery</a>
+                |
+                <a href="../../../public/html/aisles/beverages-aisle.html">Beverages</a>
+                |
+                <a href="../../../public/html/aisles/dairyandeggs-aisle.html">Dairy & Eggs</a>
+                |
+                <a href="../../../public/html/aisles/fruitsandveg-aisle.html">Fruits & Vegetables</a>
+                |
+                <a href="../../../public/html/aisles/poultry-aisle.html">Meat, Poultry & Fish</a>
+                |
+                <a href="../../../public/html/aisles/snack_aisle.html">Snacks</a> 
+            </div>
+            <div class="col-lg-6 col-md-12 myCartContainer">
+                <img class="shoppingcarticon" src="../../../images/shoppingcarticon.png" alt="Shopping Cart Icon">
+                <a href="../../../public/html/cart.html">
+                    <p>My Cart</p>
+                </a>
+            </div>
+        </div>
+
+    <!--BEVERAGES AND DRINKS-->
+    <div class="card-deck">
+
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-water.html">
+                        <img class="bev" src="../../../images/evian-water.jpg" alt="evian">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Evian Water</h5>
+                            <p class="card-text"><small class="text-muted">500mL</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$1.20/bottle</b></p>
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountWater')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountWater" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountWater')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-sprite.html">
+                        <img class="bev" src="../../../images/sprite.jpg" alt="Sprite">
+                        <div class="card-body">
+                            <h5 class="card-title">Sprite</h5>
+                            <p class="card-text"><small class="text-muted">600mL</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$1.80/bottle</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountSprite')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountSprite" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountSprite')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-cocacola.html">
+                        <img class="bev" src="../../../images/cola.jpg" alt="Cola">
+                        <div class="card-body">
+                            <h5 class="card-title">Coca Cola</h5>
+                            <p class="card-text"><small class="text-muted">600mL</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$1.80/bottle</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountCola')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountCola" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountCola')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-fanta.html">
+                        <img class="bev" src="../../../images/fanta.png" alt="Fanta">
+                        <div class="card-body">
+                            <h5 class="card-title">Fanta</h5>
+                            <p class="card-text"><small class="text-muted">600mL</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$1.80/bottle</b></p>
+    
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountFanta')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountFanta" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountFanta')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-fruitpunch.html">
+                        <img class="bev" src="../../../images/fruitpunch2.png" alt="fruit punch">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruit Punch</h5>
+                            <p class="card-text"><small class="text-muted">1.75L</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$2.25/box</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountFruitPunch')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountFruitPunch" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountFruitPunch')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-orangejuice.html">
+                        <img class="bev" src="../../../images/og_juice.jpg" alt="orange juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Orange Juice</h5>
+                            <p class="card-text"><small class="text-muted">1.75L</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$2.25/box</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountOrangeJuice')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountOrangeJuice" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountOrangeJuice')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-energydrink.html">
+                        <img class="bev" src="../../../images/energydrink.jpg" alt="Energy Drink">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster Energy Drink</h5>
+                            <p class="card-text"><small class="text-muted">473mL</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$2.75/can</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountMonster')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountMonster" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountMonster')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/beverages-redbull.html">
+                        <img class="bev" src="../../../images/redbull.jpg" alt="Redbull">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Bull Energy Drink</h5>
+                            <p class="card-text"><small class="text-muted">355mL</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$1.99/can</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountRedBull')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountRedBull" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountRedBull')" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="footer-text">
+            <a href="../../../public/html/admin.html">Admin</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

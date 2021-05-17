@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>McJawz | Beverages - Water</title>
+        <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../../../public/css/beverage.css">
+        <link rel="stylesheet" href="../../../public/css/bootstrap.css">
+        <link rel="stylesheet" href="../../../public/css/allproducts.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <script src="../../js/beverages-aisle.js"></script>
+        
+    </head>
+    <body onload="updateValue('amountWater')">
+        <!--NAVIGATIONAL BAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../../../public/html/index.html">
+                <img style="margin-right: 5px;" class="icon-logo d-inline-block align-top" src="../../../images/mcJawz_logo_no_txt.png" 
+                width="40" height="40" alt="">
+                McJawz
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../public/html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../public/html/signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../public/html/login.html">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--SUBHEADER-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 title">
+                    <h2>Beverages - Water</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 aisles">
+                    <a href="../../../public/html/aisles/bakery.html">Bakery</a>
+                    |
+                    <a href="../../../public/html/aisles/beverages-aisle.html">Beverages</a>
+                    |
+                    <a href="../../../public/html/aisles/dairyandeggs-aisle.html">Dairy & Eggs</a>
+                    |
+                    <a href="../../../public/html/aisles/fruitsandveg-aisle.html">Fruits & Vegetables</a>
+                    |
+                    <a href="../../../public/html/aisles/poultry-aisle.html">Meat, Poultry & Fish</a>
+                    |
+                    <a href="../../../public/html/aisles/snack_aisle.html">Snacks</a> 
+                </div>
+                <div class="col-lg-6 col-md-12 myCartContainer">
+                    <img class="shoppingcarticon" src="../../../images/shoppingcarticon.png" alt="">
+                    <a href="../../../public/html/cart.html">
+                        <p>My Cart</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-4 mt-2">
+                    <img src="../../../images/evian-water.jpg" class="bev-prod" alt="Water">
+                </div>
+                <div class="col-md-8 mt-2">
+                    <div>
+                        <h2 class="card-title">Water</h2>
+                        <p class="card-text">Evian water is a brand of mineral water coming from sources near Évian-les-Bains, on the south shore of Lake Geneva.</p>
+                        <p class="card-text"><small class="text-muted">500ml</small></p>
+                        <div class="row quantity">
+                            <p class="pricing">$1.20/bottle</p>
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amountWater')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        <span class="incdec">-</span>
+                                    </button>
+                                </span>
+                                <input id="amountWater" size="1" type="text" value="0">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amountWater')" type="button" class="quantity-right-plus btn btn btn-success btn-number"
+                                        data-type="plus" data-field="">
+                                        <span class="incdec">+</span>
+                                    </button>
+                                </span>
+                                <button type="button" class="btn btn-info ml-3">
+                                    <img class="shoppingcarticon" src="../../../images/shoppingcarticon.png" alt="">
+                                    <span class="addTocartButtonText">
+                                        Add To Cart
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="accordian mt-5">
+                        <input type="checkbox" id="title1"/>
+                        <label onclick="moreDescription()" for="title1">More Description</label>
+                        <p id="description-text" style="display: none;">
+                            Evian Water is a mineral water coming from several sources near Évian-les-Bains, on the south shore of Lake Geneva, which is owned by Danone. It has a PH of 7.2, 
+                            a calcium concentration of 80mg/L, a chloride concentration of 6.8mg/L, a magnesium concentration of 26mg/L, a potassium concentration of 1mg/L 
+                            and a sodium concentration of 6.5mg/L.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+        <div class="footer">
+            <div class="footer-text">
+                <a href="../../../public/html/admin.html">Admin</a>
+            </div>
+        </div>
+    </body>
+</html>
+

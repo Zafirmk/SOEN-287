@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport meta tag for responsiveness-->
+    <meta name="viewport:" content="width=device-width, initial-scale=1.0">
+    <title>McJawz | French Baguette</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bakery.css" type="text/css">
+  </head>
+  <body>
+    <!--General Container-->
+    <div class="container-fluid">
+      <!--Header-->
+      <div class="row" id="Header">
+        <div id="MobileNavContainer">
+          <img id="mobileNavBar_icon" src="../../../images/mobileNavBar_icon.png" alt="Image not found">
+        </div>
+
+        <div class="col-sm-2" id="LogoContainer">
+        <a href="../index.html">  <img id="logo" src="../../../images/mcJawz_logo_no_txt.png" alt="Image not found">
+          </a>McJawz
+        </div>
+
+        <div class="col" id="shoppingCartContainer">
+          <a class="headerText" href="#" style="border-right:1px solid darkgrey">Login</a>
+          <a class="headerText" href="#">Sign Up</a>
+          <img id="shoppingCartIcon"src="../../../images/shoppingcarticon.png" alt="Image not Found">
+        </div>
+      </div>
+      <div class="row" id="navBar">
+        <a class="navBarText" href="../aisles/poultry-aisle.html">Meats</a>
+        <a class="navBarText" href="../aisles/fruitsandveg-aisle.html">Fruits&Veggies</a>
+        <a class="navBarText" href="../aisles/dairyandeggs-aisle.html">Dairy</a>
+        <a class="navBarText" href="../aisles/snack_aisle.html">Snacks</a>
+        <a class="navBarText" href="../aisles/beverages-aisle.html">Beverages</a>
+        <a class="navBarText" href="../aisles/bakery.html">Bakery</a>
+      </div>
+      <!--Body-->
+      <div class="row" id="aisleName">
+        French Baguette
+      </div>
+      <div class="container-fluid" id="productContainer">
+        <div class="itemCard" style="margin-top:0px; margin-bottom:0px;">
+          <img class="rounded" src="../../../images/baguette.jpg" alt="Baguette" style="width:100%">
+        </div >
+        <div class="productDescription">
+          <p>Description: French style baguette freshly baked from this morning.</p>
+
+          <div class="addToCart">
+            Price: 2.99$ ea.
+            <div class="itemCounter">
+              <button class="customBtn" type="button" name="removeItem" style="background-color:#f44336;">-</button>
+              <input type="text" name="productAmount" value="1" style="width:40px; border-style:solid; margin:0px 5px;">
+              <button class="customBtn" type="button" name="addItem" style="background-color:#4CAF50; ">+</button>
+            </div>
+            <button type="button" name="button"style="border-radius:15px;">🛒 Add to cart 🛒</button>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="row" id = "footer">
+            <a class="footerText" href="#" style = "color:lightblue; border-right:1px solid darkgrey;">Contact us</a>
+            <a class="footerText" href="#"style = "color:lightblue;"> Who are we?</a>
+      </div>
+    </div>
+  </body>
+</html>

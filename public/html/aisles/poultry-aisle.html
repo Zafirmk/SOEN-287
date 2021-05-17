@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "refresh" content = "0; url = ../../php/poultry-aisle.php" />
+    <title>McJawz | Meat, Poultry & Fish</title>
+    <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../public/css/fruitsandveg-aisle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon">
+    <script src="../../js/poultry-aisle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="updateValues()">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../../public/html/index.html">
+            <img style="margin-right: 5px;" class="icon-logo d-inline-block align-top" src="../../../images/mcJawz_logo_no_txt.png" width="40"
+                height="40" alt="logo">
+            McJawz
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../public/html/login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Subheader -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 title">
+                <h2>Meat, Poultry and Fish</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 aisles">
+                <a href="../../../public/html/aisles/bakery.html">Bakery</a>
+                |
+                <a href="../../../public/html/aisles/beverages-aisle.html">Beverages</a>
+                |
+                <a href="../../../public/html/aisles/dairyandeggs-aisle.html">Dairy & Eggs</a>
+                |
+                <a href="../../../public/html/aisles/fruitsandveg-aisle.html">Fruits & Vegetables</a>
+                |
+                <a href="../../../public/html/aisles/poultry-aisle.html">Meat, Poultry & Fish</a>
+                |
+                <a href="../../../public/html/aisles/snack_aisle.html">Snacks</a> 
+</div>
+
+            <div class="col-lg-6 col-md-12 myCartContainer">
+                <img class="shoppingcarticon" src="../../../images/shoppingcarticon.png" alt="">
+                <a href="../../../public/html/cart.html">
+                    <p>My Cart</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Items -->
+    <div class="card-deck">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/poultry-aisle-chickenbreast.html">
+                        <img class="card-img-top" src="../../../images/chickenbreast.png" alt="Apples">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Breast</h5>
+                            <p class="card-text">100% Canadian Chicken</p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>Price: $8.99/kg</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-cb');" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">-
+                                    </button></span>
+    
+                                <input id='amount-cb' size="3" type="text" value="1">
+                                
+                                <span class="input-group-btn">
+                                <button onclick="increment('amount-cb');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">+
+    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+              <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                      <a class="item-link" href="../../../public/html/products/poultry-aisle-chickenthighs.html">
+                          <img class="card-img-top" src="../../../images/chickenthigh.png" alt="Thigh">
+                          <div class="card-body">
+                              <h5 class="card-title">Chicken Thigh</h5>
+                              <p class="card-text">100% Canadian Chicken</p>
+                          </div>
+                      </a>
+                      <div class="card-footer">
+                          <p class="pricing"><b>Price: $7.99/kg</b></p>
+  
+                          <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-ct');" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">-
+                                    </button></span>
+    
+                                <input id='amount-ct' size="3" type="text" value="1">
+                                
+                                <span class="input-group-btn">
+                                <button onclick="increment('amount-ct');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">+
+    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+  
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <a class="item-link" href="../../../public/html/products/poultry-aisle-chickenleg.html">
+                        <img class="card-img-top" src="../../../images/chickenleg.png" alt="leg">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Legs</h5>
+                            <p class="card-text">100% Canadian Chicken</p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>Price: $6.99/kg</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-cl');" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">-
+                                    </button></span>
+    
+                                <input id='amount-cl' size="3" type="text" value="1">
+                                
+                                <span class="input-group-btn">
+                                <button onclick="increment('amount-cl');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                        data-type="plus" data-field="">+
+    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart">
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                  <a class="item-link" href="../../../public/html/products/poultry-aisle-groundmeat.html">
+                      <img class="card-img-top" src="../../../images/groundmeat.jpg" alt="ground meat">
+                      <div class="card-body">
+                          <h5 class="card-title">Ground Meat</h5>
+                          <p class="card-text">100% Canadian Grown Beef</p>
+                      </div>
+                  </a>
+                  <div class="card-footer">
+                      <p class="pricing"><b>Price: $8.99/kg</b></p>
+
+                      <div class="row quantity">
+                        <div class="col-lg-12 incDecButton">
+                            <span class="input-group-btn">
+                                <button onclick="decrement('amount-gm');" class="quantity-left-minus btn btn-danger btn-number"
+                                    data-type="minus" data-field="">-
+                                </button></span>
+
+                            <input id='amount-gm' size="3" type="text" value="1">
+                            
+                            <span class="input-group-btn">
+                            <button onclick="increment('amount-gm');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                    data-type="plus" data-field="">+
+</button>
+                            </span>
+                        </div>
+                        <div class="col-lg-12 addToCart">
+                            <button type="button" class="btn btn-info">Add to cart</button>
+                        </div>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <a class="item-link" href="../../../public/html/products/poultry-aisle-beyondmeat.html">
+                    <img class="card-img-top" src="../../../images/beyondmeat.png" alt="beyondmeat">
+                    <div class="card-body">
+                        <h5 class="card-title">Beyond Meat</h5>
+                        <p class="card-text">100% Plant Products</p>
+                    </div>
+                </a>
+                <div class="card-footer">
+                    <p class="pricing"><b>Price: $10.99/kg</b></p>
+
+                    <div class="row quantity">
+                        <div class="col-lg-12 incDecButton">
+                            <span class="input-group-btn">
+                                <button onclick="decrement('amount-bm');" class="quantity-left-minus btn btn-danger btn-number"
+                                    data-type="minus" data-field="">-
+                                </button></span>
+
+                            <input id='amount-bm' size="3" type="text" value="1">
+                            
+                            <span class="input-group-btn">
+                            <button onclick="increment('amount-bm');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                    data-type="plus" data-field="">+
+</button>
+                            </span>
+                        </div>
+                        <div class="col-lg-12 addToCart">
+                            <button type="button" class="btn btn-info">Add to cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+              <a class="item-link" href="../../../public/html/products/poultry-aisle-salmon.html">
+                  <img class="card-img-top" src="../../../images/salmon.png" alt="Thigh">
+                  <div class="card-body">
+                      <h5 class="card-title">Atlantic Salmon</h5>
+                      <p class="card-text">100% Canadian Farmed Salmon</p>
+                  </div>
+              </a>
+              <div class="card-footer">
+                  <p class="pricing"><b>Price: $14.99/kg</b></p>
+
+                  <div class="row quantity">
+                    <div class="col-lg-12 incDecButton">
+                        <span class="input-group-btn">
+                            <button onclick="decrement('amount-sal');" class="quantity-left-minus btn btn-danger btn-number"
+                                data-type="minus" data-field="">-
+                            </button></span>
+
+                        <input id='amount-sal' size="3" type="text" value="1">
+                        
+                        <span class="input-group-btn">
+                        <button onclick="increment('amount-sal');" type="button" class="quantity-right-plus btn btn-success btn-number"
+                                data-type="plus" data-field="">+
+</button>
+                        </span>
+                        <div class="col-lg-12 addToCart">
+                            <button type="button" class="btn btn-info">Add to cart</button>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            <a href="../admin.html">Admin</a>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
+
